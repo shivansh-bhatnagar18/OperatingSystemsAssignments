@@ -102,6 +102,10 @@ int main() {
             best_time = time_taken[i];
         }
     }
+    printf("Time taken matrix:\n");
+    for (int i = 0; i < MAX_THREADS; i++) {
+        printf("Thread %d: %fs\n", i + 1, time_taken[i]);
+    }
     printf("\nThe number of threads which give the best time efficiency: %d\n", best_threads);
     printf("Time taken for %d threads: %fs\n", best_threads, best_time);
     return 0;

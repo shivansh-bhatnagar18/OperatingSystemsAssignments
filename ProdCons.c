@@ -57,7 +57,7 @@ int main() {
 
     sem_init(&empty, 0, BUFFER_SIZE);
     sem_init(&full, 0, 0);
-    sem_init(&mutex, 0, 1);
+    sem_init(&, 0, 1);
 
     pthread_create(&producerThread, NULL, producer, NULL);
     pthread_create(&consumerThread, NULL, consumer, NULL);
